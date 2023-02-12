@@ -1,4 +1,4 @@
 package valentinesDay;
 
-public interface ValentinesDay {
+public class ValentinesDay {
 }

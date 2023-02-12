@@ -1,4 +1,4 @@
 package valentinesDay;
 
-public class Marketing implements ValentinesDay {
+public class Marketing extends ValentinesDay {
 }
