@@ -1,6 +1,6 @@
 package main;
 
-public class Student {
+public abstract class Student {
     private int age;
     private String name;
 
