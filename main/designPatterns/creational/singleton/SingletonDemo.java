@@ -2,6 +2,7 @@ package main.designPatterns.creational.singleton;
 
 public class SingletonDemo {
     public static void main(String[] args) {
-        EnumSingleton singleton = EnumSingleton.INSTANCE;
+        Singleton singleton = Singleton.getInstance();
+        EnumSingleton enumSingleton = EnumSingleton.INSTANCE;
     }
 }
