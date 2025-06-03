@@ -1,17 +1,18 @@
 package main.designPatterns.creational.factory;
 
-import designPatterns.creational.factory.EmailNotification;
-
 public class NotificationFactory {
 
-    Notification notification;
-
-    public static Notification getNotification(String type) {
+    public static void getNotification(String type) {
         switch (type) {
             case "Email":
-                return new EmailNotification();
+                new EmailNotification().notifyUser();
+                break;
+            case "SMS":
+                new SMSNotification().notifyUser();
+                break;
             default:
-                throw new AssertionError();
+                new EmailNotification().notifyUser();
+                break;
         }
     }
 }
